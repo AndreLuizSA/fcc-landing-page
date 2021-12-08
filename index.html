@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>landing page</title>
+    </head>
+    <body>
+        <header id="header">
+            <nav id="nav-bar">
+                <div class="navbar-container">
+                    <div class="nav-brand">
+                        <a href="index.html">
+                            <img id="header-img" src="img/fenderlogo.png" alt="fender logo">
+                        </a>
+                    </div>
+                    <div class="nav-links">
+                         <!--Link this nav-bar to the sections of the page-->
+                        <ul>
+                            <li>
+                                <a id="feat" class="nav-link" href="#construction">construction</a>
+                            </li>
+                            <li>
+                                <a id="Sound review" class="nav-link" href="#demo">review</a>
+                            </li>
+                            <li>
+                                <a id="color" class="nav-link" href="#colors">Colors</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <!--In this section add a "p" to inform that this section is for clients to insert their email to receive newsletter-->
+                    <h2>Order your guitar now!</h2>
+                    <p>submit an email for information about shipping and pricing</p>
+                    <label for="email">
+                        <input id="email" type="text" value="email" placeholder="your email here">
+                    </label>
+                    <label for="submit">
+                        <input id="submit" type="submit">
+                    </label>
+                </form>
+            </div>
+            <h1>fender <br> American standard stratocaster</h1>
+            <h2 id="construction">features</h2>
+            <div id="features">
+                <!--Add h1's with headstock, neck, body and pickups information about the guitar. You should also insert icons for each h1-->
+                <!--You should align all the png photos and maybe put a information about each feature on bottom of the div-->
+                <!--add link to information about this parts of the stratocaster guitar, make the div pop up using the transition property on this #features id with values of transform .3s and on the hover selector use transform with the property scale of 1,3-->
+                <div id="headstock-info" class="info">
+                    <a href="https://www.fuzzfaced.net/headstock-logo-stratocaster.html" target="_blank">
+                        <img src="img/h.png" alt="headstock">
+                        <h3>headstock</h3>
+                    </a>
+                </div>
+                <div id="neck-info" class="info">
+                    <a href="https://www.fender.com/articles/tech-talk/c-u-v-which-neck-shape-is-for-you" target="_blank">
+                        <img src="img/n.png" alt="neck" class="info">
+                        <h3>neck</h3>
+                    </a>
+                </div>
+                <div id="body-info">
+                    <a href="https://www.fuzzfaced.net/stratocaster-body.html" target="_blank">
+                        <img src="img/b.png" alt="body" class="info">
+                        <h3>body</h3>
+                    </a>
+                </div>
+                <div id="pickups-info">
+                    <a href="https://www.seymourduncan.com/blog/latest-updates/strat-single-coil-tone-profiles" target="_blank">
+                        <img src="img/s.png" alt="pickups" class="info">         <h3>pickups</h3>
+                    </a>
+                 
+                </div>
+            </div>
+            <h2 id="demo">guitar demo</h2>
+            <section class="guitar-demo"> 
+                <!--You should align the video with the guitar demo to the center of the page.-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Pjkw6w4zdYw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <h2 id="colors">guitar colors</h2>
+            <div id="guitar-colors">
+                <!--Use this div to insert the colors that the client could choose. Add a sunburst, black, red and white. Each color should be side by side, they need to have a bottom "select" on-->
+                <div id="pearl">
+                    <h3>pearl</h3>
+                    <div class="color-box">
+                    </div>
+                </div>
+                <div id="sunburst">
+                    <h3>sunburst</h3>
+                    <div class="color-box">
+                    </div>
+                </div>
+                <div id="red">
+                    <h3>crimson</h3>
+                    <div class="color-box">
+                    </div>
+                </div>
+                <div id="black">
+                    <h3>black</h3>
+                    <div class="color-box">
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <!--Add a copyright element with the year. also a element with privacy, terms and contact. Use a different background color from the main section-->
+            <div id="footer-links">
+                <a href="#">privacy</a>
+                <a href="#">terms</a>
+                <a href="#">contact</a>
+            </div>
+            <div>
+                <p>	&copy; copyright 2021, Fender</p>
+            </div>
+
+        </footer>
+        
+    </body>
+</html>
